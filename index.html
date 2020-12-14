@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" >
+
+	window.onload = function () {
+//alert("on load is ready");
+$(".phone-frame").hide();
+  };
+	
+	
+$(document).ready(function(){
+    $(".desk_anchor").click(function(){
+	//alert("Hi");
+        $(".phone-frame").hide();
+       $(".responsive-iframe").show();
+
+    });
+
+});
+
+$(document).ready(function(){
+    $(".mob_anchor").click(function(){
+	//alert("Hi");
+        $(".phone-frame").show();
+       $(".responsive-iframe").hide();
+
+    });
+
+});
+/*$(document).ready(function(){
+
+});*/
+</script>
+    <style>
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.responsive-iframe2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+
+
+}
+.mobile-view {
+    display: none;
+    /*background: #FFFFFF;*/
+    padding: 16px;
+}
+        .phone-frame {
+    border-radius: 30px;
+    background: #EAEAEA;
+    width: 408px;
+    width: 44vh;
+    height: 900px;
+    height: 85vh;
+    
+}
+        .phone-top {
+    position: relative;
+    width: 100%;
+    height: 48px;
+}
+        .phone-speaker {
+    position: relative;
+    width: 48px;
+    height: 8px;
+    background: #C4C4C4;
+    border-radius: 4px;
+    margin: auto;
+    top: 21px;
+}
+        .phone-screen {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    width: calc(100% - 33px);
+    height: calc(100% - 120px) !important;
+    margin: auto;
+    background: #FFFFFF;
+    border-width: 1px;
+    border-color: #C4C4C4;
+    border-style: solid;
+}
+        .phone-bottom {
+    position: relative;
+    width: 100%;
+    height: 72px;
+}
+        .phone-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #C4C4C4;
+    border-radius: 50%;
+    margin: auto;
+    top: 16px;
+}
+    </style>
+</head>
+<body>
+
+    <style>
+        body {
+            
+            background-color: #004DA8;
+        }
+
+        h2 {
+            text-align: center;
+background-color: MintCream;
+        }
+    </style>
+
+<div class="container-fluid">
+<div class="row">
+<h2> Acuvate Embedded Power BI  </h2>
+    <p style="color:white;"> Hover the mouse on the button to check the reports.</p>
+
+    <div class="dropdown">
+        <button class="dropbtn">Reports</button>
+        <div class="dropdown-content">
+	    <a href="https://app.powerbi.com/view?r=eyJrIjoiMWRmYzNjYzMtM2ZiZC00YzA4LTg0NWEtZDZhOGIyNGQ3YWI3IiwidCI6IjlhMGM3NTUyLTM4MzMtNDZjNC1iYmFjLThiYzdmOTYwZWU1MiIsImMiOjEwfQ%3D%3D" target="action" class="desk_anchor"> Desktop</a>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiOGVjNTUxYzYtMzdiZS00MTBkLTg0Y2UtYWE4OGM1YzY1ZWVhIiwidCI6IjlhMGM3NTUyLTM4MzMtNDZjNC1iYmFjLThiYzdmOTYwZWU1MiIsImMiOjEwfQ%3D%3D" target="action2"  class="mob_anchor"> Mobile</a>
+            <!--<a href="https://app.powerbi.com/view?r=eyJrIjoiZWU5ZDNhZDItMjk5Mi00OWMyLThlMGEtNWQ1MTUxNWE3Y2FiIiwidCI6IjU3NGMzZTU2LTQ5MjQtNDAwNC1hZDFhLWQ4NDI3ZTdkYjI0MSIsImMiOjZ9" target="action"> Report 3</a>-->
+            
+        </div>
+    </div>
+</div>
+</div>
+   <table>
+        <tr>
+            <td width="1000" rowspan="10">
+<div class="container"> 
+<iframe  name="action" class="responsive-iframe"  frameborder="0" allowFullScreen="false"></iframe>
+</div>
+<div class="mobile-view" style="display: block;">
+                <div class="phone-frame" >
+                    <div class="phone-top">
+                        <div class="phone-speaker"></div>
+                    </div>
+                    <div class="phone-screen">
+							<iframe  name="action2" class="responsive-iframe2"  allowfullscreen=""></iframe>
+                    </div>
+                    <div class="phone-bottom">
+                        <div class="phone-button"></div>
+                    </div>
+                </div>
+            </div>
+</td>
+        </tr>
+    </table>
+
+</body>
+</html>
